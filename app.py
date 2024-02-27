@@ -14,6 +14,8 @@ prev_option = ""
 @app.route("/", methods=["post","get"])
 def index():
     global prev_option
+    X = "mesmo"
+    
     butshow = "enabled"
     butedit = "disabled"
     option = request.args.get("option")
